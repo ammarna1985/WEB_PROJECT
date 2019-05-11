@@ -14,7 +14,7 @@ Day#6, Thu 9 May: Studying PHP tutorial W3School
 
 Day#7, Fri 10 May: Studying MySQL tutorial and creating data model using UML 
 
-Day#8, Sat 11 May: Studying PHP and MySQL and connection between them
+Day#8, Sat 11 May: Studying PHP and MySQL with phpMyAdmin and connection between them. Adding thumbnails and showing the data related to the detabase in our webpage localhost.
 
 
 
