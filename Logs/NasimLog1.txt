@@ -1,0 +1,21 @@
+NASIM LOGs
+
+Day#1, Sat 4 May: Learning and Installing ATOM, Git and LAMP
+
+Day#2, Sun 5 May: Installing ATOM, Git XAMPP and LAMP on personal computers
+
+Day#3, Mon 6 May: Learning and Installing Bootstrap 
+
+Day#4, Tue 7 May: Learning and trying Git and using with ATOM  
+
+Day#5, Wed 8 May: Learning UML – Reviewing tutorials
+
+Day#6, Thu 9 May: Studying PHP tutorial W3School 
+
+Day#7, Fri 10 May: Studying MySQL tutorial and creating data model using UML 
+
+Day#8, Sat 11 May: Studying PHP and MySQL and connection between them
+
+
+
+
