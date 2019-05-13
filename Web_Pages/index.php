@@ -62,7 +62,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="student.jpg" alt="Students" width="460" height="345">
+        <img src="./Images/student.jpg" alt="Students" width="460" height="345">
         <div class="carousel-caption">
           <h3>Students</h3>
           <p>description</p>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="item">
-        <img src="teacher.jpg" alt="Teachers" width="460" height="345">
+        <img src="./Images/teacher.jpg" alt="Teachers" width="460" height="345">
         <div class="carousel-caption">
           <h3>Teachers</h3>
           <p>description.</p>
@@ -78,7 +78,7 @@
       </div>
 
       <div class="item">
-        <img src="course.jpg" alt="Courses" width="460" height="345">
+        <img src="./Images/course.jpg" alt="Courses" width="460" height="345">
         <div class="carousel-caption">
           <h3>courses</h3>
           <p>Description.</p>
@@ -96,15 +96,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div> 
+</div>
 
   <br><br><br>
-<div class="container">  
+<div class="container">
  <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail">
 			<a href="https://www.vaniercollege.qc.ca/">
-				<img src="student1.jpg"/>
+				<img src="./Images/student1.jpg"/>
 			</a>
 				<div class="caption">
 					<h1>Students</h1>
@@ -117,8 +117,8 @@
     <div class="col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail">
 			<a href="https://www.vaniercollege.qc.ca/">
-			<img src="teacher1.jpg"/>
-			</a>  
+			<img src="./Images/teacher1.jpg"/>
+			</a>
 				<div class="caption">
 					<h1>Teachers</h1>
 					<p>Description</p>
@@ -130,7 +130,7 @@
     <div class="col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail">
 			<a href="https://www.vaniercollege.qc.ca/">
-				<img src="course1.jpg"/>
+				<img src="./Images/course1.jpg"/>
 			</a>
 				<div class="caption">
 					<h1>Courses</h1>
@@ -143,8 +143,8 @@
     <div class="col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail">
 			<a href="https://www.vaniercollege.qc.ca/">
-				<img src="news.jpg"/>
-			</a>	
+				<img src="./Images/news.jpg"/>
+			</a>
 				<div class="caption">
 					<h1>Latest news</h1>
 					<p>Description </p>
@@ -153,17 +153,17 @@
         </div>
     </div>
  </div>
-</div> 
+</div>
 
 
 
 <hr>
-<div class="container-fluid">      
+<div class="container-fluid">
 		<footer>
 				<div class="jumbotron">
 					<p class="pull-right"><a href="#">Back to top</a></p>
 					<p>&copy; 2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-				</div>		
+				</div>
 		</footer>
 
 </div>
@@ -172,9 +172,9 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <script src="../../assets/js/vendor/holder.min.js"></script>
- 
+
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
