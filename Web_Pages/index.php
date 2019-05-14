@@ -9,11 +9,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <style>
-       .carousel-inner > .item > img,
-       .carousel-inner > .item > a > img {
-         width: 100%;
-         margin: auto;
-       }
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+           width: 100%;
+           margin: auto;
+          }
+
+          .bg-4 {
+            background-color: #2f2f2f;
+            color: #ffffff;
+          }
       </style>
   </head>
 
@@ -144,13 +149,13 @@
 
 
 <hr>
-<div class="container-fluid">
-		<footer>
-				<div class="jumbotron">
-					<p class="pull-right"><a href="#">Back to top</a></p>
-					<p>&copy; 2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-				</div>
-		</footer>
+<div class="container-fluid" >
+  <footer class="container-fluid bg-4 text-center">
+    <br>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+		<p>&copy; 2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <br>
+  </footer>
 
 </div>
 
