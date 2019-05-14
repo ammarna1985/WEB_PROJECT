@@ -17,6 +17,7 @@ Day#7, Fri 10 May: Studying MySQL tutorial and creating data model using UML
 Day#8, Sat 11 May: Studying PHP and MySQL with phpMyAdmin and connection between them. Adding thumbnails and showing the data related to the detabase in our webpage localhost.
 
 Day#9, Sun 12 May: practicing MySQL with phpMyadmin and creating the project's database.
+Day#10, Monday 13 May: Working in team on designing and connecting database to the web page in php using phpMyAdmin. creating dynamic thumbnails and sliders.
 
 
 
