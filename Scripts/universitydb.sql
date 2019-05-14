@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2019 at 05:46 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Generation Time: May 14, 2019 at 03:12 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -50,6 +50,28 @@ INSERT INTO `course` (`courseNo`, `name`, `description`, `createDate`) VALUES
 (5390, 'Anatomy ', 'Anatomy of animal\'s body', '2019-05-12'),
 (5656, 'MySQL', 'Database management with phpMyadmin', '2019-05-12'),
 (5901, 'Zumba', 'Traditional latino dance ', '2019-05-12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider`
+--
+
+CREATE TABLE `slider` (
+  `Id` int(11) NOT NULL,
+  `Image` varchar(100) NOT NULL,
+  `Header_Text` varchar(200) NOT NULL,
+  `Description_Text` varchar(1000) NOT NULL,
+  `Link_Address` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link_Address`) VALUES
+(1, './Images/student.jpg', 'Graduation Ceremony', '', 'http://www.afe.gouv.qc.ca/'),
+(2, './Images/teacher.jpg', 'Welcome to University', '', 'https://www.rbcroyalbank.com/personal.html');
 
 -- --------------------------------------------------------
 
@@ -177,6 +199,31 @@ INSERT INTO `teachercourse` (`teacherID`, `courseNo`) VALUES
 (1003, 3220),
 (1004, 4433);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `thumbnail`
+--
+
+CREATE TABLE `thumbnail` (
+  `Id` int(11) NOT NULL,
+  `Image` varchar(100) NOT NULL,
+  `Header_Text` varchar(200) NOT NULL,
+  `Description_Text` varchar(1000) NOT NULL,
+  `Link_Address` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `thumbnail`
+--
+
+INSERT INTO `thumbnail` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link_Address`) VALUES
+(1, './Images/student1.jpg', 'Students', 'Click to enter the students page', 'https://www.vaniercollege.qc.ca'),
+(2, './Images/teacher1.jpg', 'Teachers', 'Click to go to teachers page', 'https://www.facebook.com/'),
+(3, './Images/course1.jpg', 'Courses', 'Please visit our website', 'https://www.w3schools.com/'),
+(4, './Images/news.jpg', 'News', 'click to enter BBC', 'https://www.bbc.com/news'),
+(5, './Images/1.jpg', 'Mohammad', 'Enter to Yahoo', 'https://ca.yahoo.com/?p=us');
+
 --
 -- Indexes for dumped tables
 --
@@ -186,6 +233,12 @@ INSERT INTO `teachercourse` (`teacherID`, `courseNo`) VALUES
 --
 ALTER TABLE `course`
   ADD PRIMARY KEY (`courseNo`);
+
+--
+-- Indexes for table `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`Id`);
 
 --
 -- Indexes for table `student`
@@ -208,14 +261,32 @@ ALTER TABLE `teachercourse`
   ADD KEY `teacherID` (`teacherID`);
 
 --
+-- Indexes for table `thumbnail`
+--
+ALTER TABLE `thumbnail`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
   MODIFY `studentNo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2019010;
+
+--
+-- AUTO_INCREMENT for table `thumbnail`
+--
+ALTER TABLE `thumbnail`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
