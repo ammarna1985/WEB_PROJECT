@@ -7,7 +7,6 @@ $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 try {
 # MySQL with PDO_MYSQL
   $DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-  echo 'Connected';
 }
 catch(PDOException $e) {
   echo $e->getMessage();
