@@ -15,7 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
- <style> 
+ <style>
 body {
   background: url(student.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -35,8 +35,8 @@ body {
         <a href="#" class="list-group-item list-group-item-action bg-light">View</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">New</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Edit</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">delete</a>
         
+
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -50,18 +50,18 @@ body {
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-		
-      
-       
+
+
+
       </nav>
-	  
+
       <div class="container-fluid ">
         <h1 class="mt-4">header</h1>
-		
+
         <p>Heyyyyyyy</p>
         <p></p>
       </div>
-     
+
     <!-- /#page-content-wrapper -->
 
   </div>
