@@ -17,7 +17,7 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
  <style>
 body {
-  background: url(student.jpg) no-repeat center center fixed;
+  background: url(student_student.jpg) no-repeat center center fixed;
   background-size: cover;
   color:white;
 }
@@ -35,7 +35,7 @@ body {
         <a href="#" class="list-group-item list-group-item-action bg-light">View</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">New</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Edit</a>
-        
+
 
       </div>
     </div>
