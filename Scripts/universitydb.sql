@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2019 at 03:12 AM
+-- Generation Time: May 16, 2019 at 12:44 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -70,8 +70,8 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link_Address`) VALUES
-(1, './Images/student.jpg', 'Graduation Ceremony', '', 'http://www.afe.gouv.qc.ca/'),
-(2, './Images/teacher.jpg', 'Welcome to University', '', 'https://www.rbcroyalbank.com/personal.html');
+(1, './Images/main_slider_student.jpg', 'Graduation Ceremony', '', 'http://www.afe.gouv.qc.ca/'),
+(2, './Images/main_slider_teacher.jpg', 'Welcome to University', '', 'https://www.rbcroyalbank.com/personal.html');
 
 -- --------------------------------------------------------
 
@@ -218,11 +218,10 @@ CREATE TABLE `thumbnail` (
 --
 
 INSERT INTO `thumbnail` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link_Address`) VALUES
-(1, './Images/student1.jpg', 'Students', 'Click to enter the students page', 'https://www.vaniercollege.qc.ca'),
-(2, './Images/teacher1.jpg', 'Teachers', 'Click to go to teachers page', 'https://www.facebook.com/'),
-(3, './Images/course1.jpg', 'Courses', 'Please visit our website', 'https://www.w3schools.com/'),
-(4, './Images/news.jpg', 'News', 'click to enter BBC', 'https://www.bbc.com/news'),
-(5, './Images/1.jpg', 'Mohammad', 'Enter to Yahoo', 'https://ca.yahoo.com/?p=us');
+(1, './Images/main_thumbnail_student.jpg', 'Students', 'Click to enter the students page', 'https://www.vaniercollege.qc.ca'),
+(2, './Images/main_thumbnail_teacher.jpg', 'Teachers', 'Click to go to teachers page', 'https://www.facebook.com/'),
+(3, './Images/main_thumbnail_course.jpg', 'Courses', 'Please visit our website', 'https://www.w3schools.com/'),
+(4, './Images/main_thumbnail_news.jpg', 'News', 'click to enter BBC', 'https://www.bbc.com/news');
 
 --
 -- Indexes for dumped tables
