@@ -1,0 +1,34 @@
+Mohammad Javad Kojouri
+-------------------------------------
+
+Sat May 4th: 4hr
+-	I spent almost 4 hours on Final Project and software which I should use for doing my project
+
+Sun May 5th: 4hr
+-	I installed MAMP (virtual server), Atom(IDE), Git, Git Hub and I made repository and I learned that how I should connect to repository remotely.
+-	My teammates and I started to write our proposal and reports
+
+Mon May 6th: 4hr
+-	I realized that the best way in order to design front-end is using bootstrap, so I started to learn bootstrap.
+-	I did one project with using bootstrap.
+
+Tue May 7th:4hr
+-	I started to learn PHP from w3school in order to make relation between database and application AND using MAMP (server).
+
+Wed May 8th:4hr
+-	We had negotiation about Data Model and relation, so we started to draw UML and learning PHP and My SQL.
+
+Thu May 9th:4hr
+-	I started to design the layout of our website, so I used ATOM as IDE, and I continued to learn bootstrap and JavaScript.
+
+Fri May 10th:3hr
+-	I read some tutorial about PHP and a little JavaScript.
+
+Sun May 11th:5hr
+-	I worked on designing the layout of main page of our project.
+
+Mon May 12th:4hr
+-	We worked together in team on designing and connecting database to the web page in PHP using phpMyAdmin. Finally, we created dynamic thumbnails and sliders.
+
+Tue May 13th:4hr
+-	We spent about 4hr on learning PHP and I designed two pages for our project.
