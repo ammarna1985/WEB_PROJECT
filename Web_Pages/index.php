@@ -1,8 +1,21 @@
 <?php
   include("config.php");
-  include("header.php");
  ?>
 
+ <!DOCTYPE html>
+ <html>
+   <head>
+       <title>Main Page</title>
+       <?php
+         include("head.php");
+        ?>
+   </head>
+
+   <body>
+
+     <?php
+       include("menu.php");
+      ?>
 
           <!--Slider-->
           <div id="myCarousel" class="carousel slide " data-ride="carousel" style="height:400px;">
@@ -92,6 +105,12 @@
  </div>
 </div>
 
+<br><br>
+
 <?php
   include("footer.php");
+  include("jscript.php");
  ?>
+
+ </body>
+ </html>

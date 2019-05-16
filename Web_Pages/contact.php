@@ -1,11 +1,13 @@
 <?php
-  include("header.php");
+  include("menu.php");
  ?>
   <!DOCTYPE html>
   <html>
     <head>
-        <title>Main Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <?php
+          include("head.php");
+         ?>
         <style>
           p {color:blue;}
         </style>
@@ -19,4 +21,8 @@
 
       <?php
         include("footer.php");
+        include("jscript.php");
        ?>
+
+       </body>
+    </html>
