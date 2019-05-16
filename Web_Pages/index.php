@@ -1,63 +1,9 @@
 <?php
   include("config.php");
+  include("header.php");
  ?>
 
-<!DOCTYPE html>
-<html>
-  <head>
-      <title>Second-Edition</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <style>
-          .carousel-inner > .item > img,
-          .carousel-inner > .item > a > img {
-           width: 100%;
-           margin: auto;
-          }
 
-          .bg-4 {
-            background-color: #2f2f2f;
-            color: #ffffff;
-          }
-      </style>
-  </head>
-
-  <body>
-     <div class="container-fluid">
-          <nav class="navbar navbar-inverse">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">Final Project</a>
-              </div>
-              <ul class="nav navbar-nav">
-                  <li ><a href="#">Home</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Students <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Page 1-1</a></li>
-                      <li><a href="#">Page 1-2</a></li>
-                      <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teachers <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Page 1-1</a></li>
-                      <li><a href="#">Page 1-2</a></li>
-                      <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Page 1-1</a></li>
-                      <li><a href="#">Page 1-2</a></li>
-                      <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                  </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              </ul>
-          </nav>
-        </div>
           <!--Slider-->
           <div id="myCarousel" class="carousel slide " data-ride="carousel" style="height:400px;">
           <ol class="carousel-indicators">
@@ -146,26 +92,6 @@
  </div>
 </div>
 
-
-
-<hr>
-<div class="container-fluid" >
-  <footer class="container-fluid bg-4 text-center">
-    <br>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-		<p>&copy; 2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    <br>
-  </footer>
-
-</div>
-
-
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+<?php
+  include("footer.php");
+ ?>
