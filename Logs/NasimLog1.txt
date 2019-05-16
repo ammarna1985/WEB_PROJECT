@@ -20,7 +20,10 @@ Day#9, Sun 12 May: practicing MySQL with phpMyadmin and creating the project's d
 
 Day#10, Mon 13 May: Working in team on designing and connecting database to the web page in php using phpMyAdmin. creating dynamic thumbnails and sliders.
 
-Day#11, Tue 14 May:
+Day#11, Tue 14 May: learning how to split the code into different php files. learnig making login page.
+
+Day#12, Tue 15 May: Working on different page designs and liks.
+
 
 
 
