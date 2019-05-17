@@ -89,11 +89,11 @@
               while($row = $STH->fetch()) {
        ?>
                  <div class="col-sm-6 col-md-4 col-lg-3" >
-                   <div class="thumbnail">
+                   <div class="thumbnail" style="border-radius:50px;">
                      <a href="<?php echo $row['Link_Address']; ?>">
                        <img src="<?php echo $row['Image']; ?>" style="width:150; height:175px;"/>
                      </a>
-                     <div class="caption">
+                     <div class="caption" style="text-align: center;">
              					<h1><?php echo $row['Header_Text']; ?></h1>
              					<p><?php echo $row['Description_Text']; ?></p>
              				</div>

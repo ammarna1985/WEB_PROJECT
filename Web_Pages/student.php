@@ -1,26 +1,32 @@
+<?php
+  include("config.php");
+ ?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Collapsible sidebar using Bootstrap 3</title>
-
+      <title>Student</title>
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="./css/style5.css">
+      <?php
+        include("head.php");
+       ?>
          <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="style5.css">
+
+
         <style>
                 body {
-                    background: url(student_student.jpg) no-repeat center center fixed;
+                    background: url(./Images/student_student.jpg) no-repeat center center fixed;
                     background-size: cover;
                     color:white;
                 }
        </style>
     </head>
     <body>
-
+      <?php
+        include("menu.php");
+       ?>
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
@@ -62,10 +68,10 @@
             </div>
         </div>
 
-        <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <?php
+          include("footer.php");
+          include("jscript.php");
+         ?>
 
          <script type="text/javascript">
              $(document).ready(function () {
@@ -75,5 +81,6 @@
                  });
              });
          </script>
+
     </body>
 </html>

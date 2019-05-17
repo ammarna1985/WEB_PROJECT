@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2019 at 12:44 AM
+-- Generation Time: May 17, 2019 at 03:20 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -218,9 +218,9 @@ CREATE TABLE `thumbnail` (
 --
 
 INSERT INTO `thumbnail` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link_Address`) VALUES
-(1, './Images/main_thumbnail_student.jpg', 'Students', 'Click to enter the students page', 'https://www.vaniercollege.qc.ca'),
-(2, './Images/main_thumbnail_teacher.jpg', 'Teachers', 'Click to go to teachers page', 'https://www.facebook.com/'),
-(3, './Images/main_thumbnail_course.jpg', 'Courses', 'Please visit our website', 'https://www.w3schools.com/'),
+(1, './Images/main_thumbnail_student.jpg', 'Students', 'Click to enter the students page', './student.php'),
+(2, './Images/main_thumbnail_teacher.jpg', 'Teachers', 'Click to go to teachers page', './teacher.php'),
+(3, './Images/main_thumbnail_course.jpg', 'Courses', 'Please visit our website', './course.php'),
 (4, './Images/main_thumbnail_news.jpg', 'News', 'click to enter BBC', 'https://www.bbc.com/news');
 
 --

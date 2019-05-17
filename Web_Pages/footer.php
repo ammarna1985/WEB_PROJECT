@@ -1,5 +1,5 @@
 <hr>
-<div class="container-fluid" >
+<div class="container-fluid" style="padding-left:0px;">
   <!-- Footer -->
 <footer class="page-footer font-small blue bg-4 text-center" style="position:absolute;bottom:0;width:100%;">
   <br>

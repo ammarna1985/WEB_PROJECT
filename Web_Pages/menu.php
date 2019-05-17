@@ -1,5 +1,5 @@
-     <div class="container-fluid">
-          <nav class="navbar navbar-inverse">
+     <div class="container-fluid" style="padding: 0px;">
+          <nav class="navbar navbar-inverse" style="margin-bottom:5px;">
               <div class="navbar-header">
                 <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt="LOGO" style="height:50px"></a>
               </div>
