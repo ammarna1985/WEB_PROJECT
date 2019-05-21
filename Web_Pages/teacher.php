@@ -27,6 +27,9 @@
       <?php
         include("menu.php");
        ?>
+
+
+
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
@@ -66,7 +69,52 @@
                     </div>
                 </nav>
             </div>
+
+            <div class="container">
+              <h2 style="margin-top:100px">Teacher</h2>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>StudentNo</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>2222222</td>
+                    <td>john@example.com</td>
+                    <td>cabendish</td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>2222222</td>
+                    <td>john@example.com</td>
+                    <td>cabendish</td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>2222222</td>
+                    <td>john@example.com</td>
+                    <td>cabendish</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
         </div>
+
+
 
         <?php
           include("footer.php");
