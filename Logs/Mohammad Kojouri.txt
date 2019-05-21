@@ -24,11 +24,24 @@ Thu May 9th:4hr
 Fri May 10th:3hr
 -	I read some tutorial about PHP and a little JavaScript.
 
-Sun May 11th:5hr
+Sat May 11th:5hr
 -	I worked on designing the layout of main page of our project.
 
-Mon May 12th:4hr
+Sun May 12th:4hr
 -	We worked together in team on designing and connecting database to the web page in PHP using phpMyAdmin. Finally, we created dynamic thumbnails and sliders.
 
-Tue May 13th:4hr
+Mon May 13th:4hr
 -	We spent about 4hr on learning PHP and I designed two pages for our project.
+
+Tue May 14th:4hr
+-       We learned how to split the code into different php files and learned making login          page.
+
+Wed May 15th:4hr
+-        I made some pages and links.
+
+Thu May 16th:3hr
+-	our lay out had some problems on details ,we Worked on it and their links.
+
+Mon May 20th:3hr
+- 	I worked on some tables for different pages of our websites.
+
