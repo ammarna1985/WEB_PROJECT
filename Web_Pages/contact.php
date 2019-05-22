@@ -47,7 +47,7 @@
                 </iframe>
             </div>
             <div class="column right" style="margin-top:25px">
-                <h1 style="text-align:center;">Contact Information</h1>
+                <h2 style="text-align:left;">Contact Information</h2>
                 <hr>
                 <p><b>Address:</b> Velenjak st. Daneshjou Boulevard, District 1</p>
                 <p>Tehran, Tehran</p>
