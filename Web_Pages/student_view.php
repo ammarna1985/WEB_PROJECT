@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>Students</title>
+      <title>Students View</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -15,13 +15,12 @@
          <!-- Bootstrap CSS CDN -->
 
 
-        <style>
-                body {
-                    background: url(./Images/student_student.jpg) no-repeat center center fixed;
-                    background-size: cover;
-                    color:white;
-                  }
-       </style>
+         <style>
+                 body {
+                     background-color:gray;
+                     color:darkblue;
+                }
+        </style>
     </head>
     <body>
       <?php
@@ -34,7 +33,7 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Students</h3>
+                    <h3><a href="student.php">Students</a></h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -69,6 +68,55 @@
                     </div>
                 </nav>
             </div>
+
+            <div class="container">
+              <h2 style="margin-top:100px">Students</h2>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Student No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Major</th>
+                    <th>Supervisor</th>
+                  </tr>
+                </thead>
+
+
+              <?php
+                      $STH = $DBH->query('SELECT * FROM student');
+                      # setting the fetch mode
+                      $STH->setFetchMode(PDO::FETCH_ASSOC);
+
+                      while($row = $STH->fetch()) {
+              ?>
+
+              <tbody>
+
+
+                  <tr>
+                    <td><?php echo $row['studentNo'];?></td>
+                    <td><?php echo $row['fName'];?></td>
+                    <td><?php echo $row['lName'];?></td>
+                    <td><?php echo $row['tel'];?></td>
+                    <td><?php echo $row['email'];?></td>
+                    <td><?php echo $row['address'];?></td>
+                    <td><?php echo $row['major'];?></td>
+                    <td><?php echo $row['supervisor'];?></td>
+                  </tr>
+
+                </tbody>
+
+                <?php
+                    }
+                ?>
+              </table>
+            </div>
+
+        </div>
 
 
 

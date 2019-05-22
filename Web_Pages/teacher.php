@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>teacher</title>
+      <title>Teacher</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -17,9 +17,8 @@
 
         <style>
                 body {
-                    background: url(./Images/student_student.jpg) no-repeat center center fixed;
+                    background: url(./Images/teacher_teacher.jpg) no-repeat center center fixed;
                     background-size: cover;
-                    color:white;
                 }
        </style>
     </head>
@@ -40,7 +39,7 @@
                 <ul class="list-unstyled components">
                     </li>
                     <li>
-                        <a href="#">View</a>
+                        <a href="teacher_view.php">View</a>
                     </li>
                     <li>
                         <a href="#">New</a>
@@ -70,49 +69,8 @@
                 </nav>
             </div>
 
-            <div class="container">
-              <h2 style="margin-top:100px">Teacher</h2>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>StudentNo</th>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>2222222</td>
-                    <td>john@example.com</td>
-                    <td>cabendish</td>
-                  </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>2222222</td>
-                    <td>john@example.com</td>
-                    <td>cabendish</td>
-                  </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>2222222</td>
-                    <td>john@example.com</td>
-                    <td>cabendish</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
 
-        </div>
+
 
 
 
