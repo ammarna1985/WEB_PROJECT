@@ -90,7 +90,7 @@
        ?>
                  <div class="col-sm-6 col-md-4 col-lg-3" >
                    <div class="thumbnail" style="border-radius:50px;">
-                     <a href="<?php echo $row['Link_Address']; ?>">
+                     <a href="<?php echo $row['Link_Address']; ?>" onclick = "return checklogin()">
                        <img src="<?php echo $row['Image']; ?>" style="width:150; height:175px;"/>
                      </a>
                      <div class="caption" style="text-align: center;">
@@ -111,6 +111,27 @@
   include("footer.php");
   include("jscript.php");
  ?>
+ <script>
+
+
+  function checklogin() {
+    var isLogin=<?php
+                        if(!isset($_SESSION["user"])){
+                          echo '0';
+                        }
+                        else {
+                          echo '1';
+                        }
+                    ?>;
+      if (isLogin!=1) {
+          window.alert('You are not login!');
+          return false;
+      }
+      else {
+
+      }
+  }
+ </script>
 
  </body>
  </html>

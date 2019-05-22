@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2019 at 03:20 AM
+-- Generation Time: May 22, 2019 at 03:43 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -223,6 +223,30 @@ INSERT INTO `thumbnail` (`Id`, `Image`, `Header_Text`, `Description_Text`, `Link
 (3, './Images/main_thumbnail_course.jpg', 'Courses', 'Please visit our website', './course.php'),
 (4, './Images/main_thumbnail_news.jpg', 'News', 'click to enter BBC', 'https://www.bbc.com/news');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `login` varchar(100) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `phonenumber` varchar(15) NOT NULL,
+  `password_hash` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `email`, `gender`, `first_name`, `last_name`, `phonenumber`, `password_hash`) VALUES
+(1, 'ammarna1985', '', '', 'Ammar', 'Naghdali Foroushani', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
+
 --
 -- Indexes for dumped tables
 --
@@ -266,6 +290,12 @@ ALTER TABLE `thumbnail`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -286,6 +316,12 @@ ALTER TABLE `student`
 --
 ALTER TABLE `thumbnail`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
