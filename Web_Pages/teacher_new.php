@@ -34,7 +34,7 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Student</h3>
+                    <h3>Teacher</h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -43,7 +43,7 @@
                         <a href="#">View</a>
                     </li>
                     <li>
-                        <a href="student_new.php">New</a>
+                        <a href="#">New</a>
                     </li>
                     <li>
                         <a href="#">Edit</a>
@@ -70,13 +70,12 @@
                 </nav>
             </div>
 
-            <br>
-            <br>
+
         <div class="container">
         <div class="jumbotron" style="margin-top:48px">
            <form action=" " method="post" autocomplete="on">
 
-           <h2 >Student</h2>
+           <h2 >Teacher</h2>
            <br>
                <div class="form-group">
                  <label>First Name</label>
@@ -104,13 +103,8 @@
                </div>
 
                <div class="form-group">
-                 <label>Major</label>
-                 <input type="text" class="form-control" name="major" required="required" >
-               </div>
-
-               <div class="form-group">
-                 <label>Supervisor</label>
-                 <input type="text" class="form-control" name="supervisor" required="required" >
+                 <label>Field</label>
+                 <input type="text" class="form-control" name="field" required="required" >
                </div>
 
 

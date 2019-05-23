@@ -34,7 +34,7 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Student</h3>
+                    <h3>Course</h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -43,7 +43,7 @@
                         <a href="#">View</a>
                     </li>
                     <li>
-                        <a href="student_new.php">New</a>
+                        <a href="#">New</a>
                     </li>
                     <li>
                         <a href="#">Edit</a>
@@ -70,47 +70,27 @@
                 </nav>
             </div>
 
-            <br>
-            <br>
+
         <div class="container">
         <div class="jumbotron" style="margin-top:48px">
            <form action=" " method="post" autocomplete="on">
 
-           <h2 >Student</h2>
+           <h2 >Course</h2>
            <br>
                <div class="form-group">
-                 <label>First Name</label>
-                 <input type="text" class="form-control" name="firstname" required="required" >
+                 <label>Course No</label>
+                 <input type="text" class="form-control" name="courseno" required="required" >
                </div>
 
                <div class="form-group">
-                 <label>Last Name</label>
-                 <input type="text" class="form-control" name="lastname" required="required" >
+                 <label>Name</label>
+                 <input type="text" class="form-control" name="name" required="required" >
                </div>
 
-               <div class="form-group">
-                 <label>Phone</label>
-                 <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" >
-               </div>
 
                <div class="form-group">
-                 <label>Email </label>
-                 <input type="email" class="form-control" name="email"  required="required">
-               </div>
-
-               <div class="form-group">
-                 <label>Address</label>
-                 <input type="text" class="form-control" name="address" required="required" >
-               </div>
-
-               <div class="form-group">
-                 <label>Major</label>
-                 <input type="text" class="form-control" name="major" required="required" >
-               </div>
-
-               <div class="form-group">
-                 <label>Supervisor</label>
-                 <input type="text" class="form-control" name="supervisor" required="required" >
+                 <label>Description</label>
+                 <input type="text" class="form-control" name="description" required="required" >
                </div>
 
 
