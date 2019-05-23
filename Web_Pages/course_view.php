@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>Course</title>
+      <title>Course View</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -15,22 +15,32 @@
          <!-- Bootstrap CSS CDN -->
 
 
-        <style>
-                body {
-                    background: url(./Images/course_course.jpg) no-repeat center center fixed;
-                    background-size: cover;
+         <style>
+                 body {
+                     background: url(./Images/course_view.jpg) no-repeat center center fixed;
+                     background-size: cover;
+                     color:black;
                 }
-       </style>
+
+              table, th, td, tr {
+                  border: 2px solid black;
+                  padding: 5px;
+                }
+
+        </style>
     </head>
     <body>
       <?php
         include("menu.php");
        ?>
+
+
+
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Course</h3>
+                    <h3><a href="course.php">Courses</a></h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -42,7 +52,7 @@
                         <a href="course_new.php">New</a>
                     </li>
                     <li>
-                        <a href="course_edit.php">Edit</a>
+                        <a href="course_edit">Edit</a>
                     </li>
                 </ul>
 
@@ -65,7 +75,45 @@
                     </div>
                 </nav>
             </div>
+
+            <div class="container">
+              <h2 style="margin-top:10px">Courses</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Course No.</th>
+                    <th>Course Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+
+
+              <?php
+                      $STH = $DBH->query('SELECT * FROM course');
+                      # setting the fetch mode
+                      $STH->setFetchMode(PDO::FETCH_ASSOC);
+
+                      while($row = $STH->fetch()) {
+              ?>
+
+              <tbody>
+                  <tr>
+                    <td><?php echo $row['courseNo'];?></td>
+                    <td><?php echo $row['name'];?></td>
+                    <td><?php echo $row['description'];?></td>
+                  </tr>
+              </tbody>
+
+                <?php
+                    }
+                ?>
+              </table>
+            </div>
+
         </div>
+
+
+
 
         <?php
           include("footer.php");

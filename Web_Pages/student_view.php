@@ -17,9 +17,16 @@
 
          <style>
                  body {
-                     background-color:gray;
-                     color:darkblue;
+                     background: url(./Images/student_view.jpg) no-repeat center center fixed;
+                     background-size: cover;
+                     color:black;
                 }
+
+              table, th, td, tr {
+                  border: 2px solid black;
+                  padding: 5px;
+                }
+
         </style>
     </head>
     <body>
@@ -70,8 +77,8 @@
             </div>
 
             <div class="container">
-              <h2 style="margin-top:100px">Students</h2>
-              <table class="table table-bordered">
+              <h2 style="margin-top:10px">Students</h2>
+              <table>
                 <thead>
                   <tr>
                     <th>Student No.</th>

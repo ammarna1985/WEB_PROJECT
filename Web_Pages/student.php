@@ -19,8 +19,7 @@
                 body {
                     background: url(./Images/student_student.jpg) no-repeat center center fixed;
                     background-size: cover;
-                    color:white;
-                  }
+                }
        </style>
     </head>
     <body>

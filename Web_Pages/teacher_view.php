@@ -15,12 +15,19 @@
          <!-- Bootstrap CSS CDN -->
 
 
-        <style>
-            body {
-              background-color:gray;
-              color:darkblue;
-            }
-       </style>
+         <style>
+                 body {
+                     background: url(./Images/teacher_view.jpg) no-repeat center center fixed;
+                     background-size: cover;
+                     color:black;
+                }
+
+              table, th, td, tr {
+                  border: 2px solid black;
+                  padding: 5px;
+                }
+
+        </style>
     </head>
 
     <body>
@@ -70,7 +77,7 @@
 
             <div class="container">
               <h2 style="margin-top:100px">Teachers</h2>
-              <table class="table table-bordered">
+              <table>
                 <thead>
                   <tr>
                     <th>Teacher ID</th>
