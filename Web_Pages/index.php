@@ -111,27 +111,6 @@
   include("footer.php");
   include("jscript.php");
  ?>
- <script>
-
-
-  function checklogin() {
-    var isLogin=<?php
-                        if(!isset($_SESSION["user"])){
-                          echo '0';
-                        }
-                        else {
-                          echo '1';
-                        }
-                    ?>;
-      if (isLogin!=1) {
-          window.alert('You are not login!');
-          return false;
-      }
-      else {
-
-      }
-  }
- </script>
-
+ 
  </body>
  </html>
