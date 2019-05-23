@@ -22,8 +22,15 @@ Day#10, Mon 13 May: Working in team on designing and connecting database to the 
 
 Day#11, Tue 14 May: learning how to split the code into different php files. learnig making login page.
 
-Day#12, Tue 15 May: Working on different page designs and liks.
+Day#12, Tue 15 May: Working on different page designs and links.
 
+Day#13, Tue 16 May: Working on different page designs and links.
+
+Day#14, Tue 17 May: Connecting php pages to database.
+
+Day#18, Tue 21 May: Connecting php pages to database.
+
+Day#19, Tue 22 May: Design more pages and  Connecting php pages to database.
 
 
 
