@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'universitydb';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 try {
 # MySQL with PDO_MYSQL
