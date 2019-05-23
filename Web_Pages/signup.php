@@ -7,48 +7,75 @@
     <?php
       include("head.php");
      ?>
-
-
-     <?php
-     if (isset($_POST['submit']))
-     {
-       $login=safe_input($_POST['login']);
-       $password_hash=sha1(safe_input($_POST['password']));
-       $sql="SELECT * FROM users where login= :login_value and password_hash=:password_hash";
-       $STH = $DBH->prepare($sql);
-       $STH->bindParam(':login_value', $login);
-       $STH->bindParam(':password_hash', $password_hash);
-       # setting the fetch mode
-       $STH->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,"User");
-       $STH->execute();
-       if ($STH->rowCount() > 0) {
-         $user=$STH->fetch();
-         session_start();
-         $_SESSION["user"] = $user;
-         header('Location: ./index.php');
-       }
-       else {
-         echo '<p class="text-danger">Your Login or your Password is invalid.</p>';
-       }
-     }
-
-    ?>
   </head>
   <body>
     <?php
       include("menu.php");
      ?>
 
+     <?php
+     if (isset($_POST['submit']))
+     {
+       $newuser=new User;
+       $newuser->setlogin(safe_input($_POST['login']));
+       $newuser->setemail(safe_input($_POST['email']));
+       $newuser->setgender(safe_input($_POST['gender']));
+       $newuser->setfirst_name(safe_input($_POST['first_name']));
+       $newuser->setlast_name(safe_input($_POST['last_name']));
+       $newuser->setphonenumber(safe_input($_POST['phonenumber']));
+       $newuser->setpassword_hash(sha1(safe_input($_POST['password'])));
+
+
+
+
+       $sql="INSERT INTO users (login, email, gender,first_name,last_name,phonenumber,password_hash) value (:login, :email, :gender,:first_name,:last_name,:phonenumber,:password_hash)";
+       $STH = $DBH->prepare($sql);
+
+        $login=$newuser->getlogin();
+        $email=$newuser->getemail();
+        $gender=$newuser->getgender();
+        $first_name=$newuser->getfirst_name();
+        $last_name=$newuser->getlast_name();
+        $phonenumber=$newuser->getphonenumber();
+        $password_hash=$newuser->getpassword_hash();
+
+        $STH->bindParam(':login',$login );
+        $STH->bindParam(':email', $email);
+        $STH->bindParam(':gender', $gender);
+        $STH->bindParam(':first_name', $first_name);
+        $STH->bindParam(':last_name', $last_name);
+        $STH->bindParam(':phonenumber', $phonenumber);
+        $STH->bindParam(':password_hash', $password_hash);
+
+
+       try {
+          $STH->execute();
+          $newuser->setid($DBH->lastInsertId());
+          session_start();
+          $_SESSION["user"] = $newuser;
+          #echo '<script language="javascript">';
+          #echo 'window.alert("Sign up successfully! \n You are moved to the home page")';
+          #echo '</script>';
+          header('Location: ./index.php');
+       } catch (\Exception $e) {
+         echo '<p class="text-danger">' ?> <?php echo $e->getMessage().'</p>';
+       }
+
+
+     }
+
+    ?>
+
      <br>
      <br>
      <div class="container">
      <div class="jumbotron">
-        <form action="/examples/actions/confirmation.php" method="post">
+        <form method="POST" action="signup.php">
     		<p>Please fill in this form to create an account!</p>
     		<hr>
             <div class="form-group">
     			    <label>Login</label>
-            	<input type="text" class="form-control" name="username" required="required" >
+            	<input type="text" class="form-control" name="login" required="required" >
             </div>
             <div class="form-group">
     			    <label>Email Address</label>
@@ -93,7 +120,7 @@
     			      <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
     	    	</div>
     	    	<div class="form-group">
-                <button type="submit" name="submit" value="Login" class="btn btn-primary">Sign Up</button>
+                <button type="submit" name="submit" value="Signup" class="btn btn-primary">Sign Up</button>
             </div>
         </form>
     	<div class="text-center">Already have an account? <a href="./login.php">Login here</a></div>
