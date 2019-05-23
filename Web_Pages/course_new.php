@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>Teacher</title>
+      <title>Course New</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -17,8 +17,9 @@
 
         <style>
                 body {
-                    background: url(./Images/teacher_teacher.jpg) no-repeat center center fixed;
+                    background: url(./Images/student_student.jpg) no-repeat center center fixed;
                     background-size: cover;
+
                 }
        </style>
     </head>
@@ -33,19 +34,19 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Teacher</h3>
+                    <h3>Course</h3>
                 </div>
 
                 <ul class="list-unstyled components">
                     </li>
                     <li>
-                        <a href="teacher_view.php">View</a>
+                        <a href="#">View</a>
                     </li>
                     <li>
-                        <a href="teacher_new.php">New</a>
+                        <a href="#">New</a>
                     </li>
                     <li>
-                        <a href="teacher_edit.php">Edit</a>
+                        <a href="#">Edit</a>
                     </li>
                 </ul>
 
@@ -70,7 +71,43 @@
             </div>
 
 
+        <div class="container">
+        <div class="jumbotron" style="margin-top:48px">
+           <form action=" " method="post" autocomplete="on">
 
+           <h2 >Course</h2>
+           <br>
+               <div class="form-group">
+                 <label>Course No</label>
+                 <input type="text" class="form-control" name="courseno" required="required" >
+               </div>
+
+               <div class="form-group">
+                 <label>Name</label>
+                 <input type="text" class="form-control" name="name" required="required" >
+               </div>
+
+
+               <div class="form-group">
+                 <label>Description</label>
+                 <input type="text" class="form-control" name="description" required="required" >
+               </div>
+
+
+               <div class="form-group">
+                   <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+                   <button type="reset" name="reset" value="Submit" class="btn btn-primary"> Reset</button>
+               </div>
+               </div>
+
+
+           </form>
+
+       </div>
+       </div>
+             <br><br>
+
+        </div>
 
 
 

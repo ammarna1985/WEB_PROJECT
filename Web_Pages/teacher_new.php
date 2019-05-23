@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>Teacher</title>
+      <title>Teacher New</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -17,8 +17,9 @@
 
         <style>
                 body {
-                    background: url(./Images/teacher_teacher.jpg) no-repeat center center fixed;
+                    background: url(./Images/student_student.jpg) no-repeat center center fixed;
                     background-size: cover;
+
                 }
        </style>
     </head>
@@ -70,7 +71,57 @@
             </div>
 
 
+        <div class="container">
+        <div class="jumbotron" style="margin-top:48px">
+           <form action=" " method="post" autocomplete="on">
 
+           <h2 >Teacher</h2>
+           <br>
+               <div class="form-group">
+                 <label>First Name</label>
+                 <input type="text" class="form-control" name="firstname" required="required" >
+               </div>
+
+               <div class="form-group">
+                 <label>Last Name</label>
+                 <input type="text" class="form-control" name="lastname" required="required" >
+               </div>
+
+               <div class="form-group">
+                 <label>Phone</label>
+                 <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" >
+               </div>
+
+               <div class="form-group">
+                 <label>Email </label>
+                 <input type="email" class="form-control" name="email"  required="required">
+               </div>
+
+               <div class="form-group">
+                 <label>Address</label>
+                 <input type="text" class="form-control" name="address" required="required" >
+               </div>
+
+               <div class="form-group">
+                 <label>Field</label>
+                 <input type="text" class="form-control" name="field" required="required" >
+               </div>
+
+
+               <div class="form-group">
+                   <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+                   <button type="reset" name="reset" value="Submit" class="btn btn-primary"> Reset</button>
+               </div>
+               </div>
+
+
+           </form>
+
+       </div>
+       </div>
+             <br><br>
+
+        </div>
 
 
 
