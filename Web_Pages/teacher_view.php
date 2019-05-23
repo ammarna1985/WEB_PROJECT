@@ -41,10 +41,10 @@
                         <a href="teacher_view.php">View</a>
                     </li>
                     <li>
-                        <a href="#">New</a>
+                        <a href="teacher_new.php">New</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="teacher_edit.php">Edit</a>
                     </li>
                 </ul>
 

@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>teacher</title>
+      <title>Course New</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php

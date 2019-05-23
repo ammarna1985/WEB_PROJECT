@@ -6,7 +6,7 @@
 <html>
     <head>
 
-      <title>teacher</title>
+      <title>Student New</title>
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="./css/style5.css">
       <?php
@@ -40,13 +40,13 @@
                 <ul class="list-unstyled components">
                     </li>
                     <li>
-                        <a href="#">View</a>
+                        <a href="student_view.php">View</a>
                     </li>
                     <li>
                         <a href="student_new.php">New</a>
                     </li>
                     <li>
-                        <a href="#">Edit</a>
+                        <a href="student_edit.php">Edit</a>
                     </li>
                 </ul>
 
