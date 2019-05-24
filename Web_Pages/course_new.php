@@ -40,12 +40,12 @@
                 <ul class="list-unstyled components">
                     </li>
                     <li>
-                        <a href="#">View</a>
+                        <a href="course_view.php">View</a>
                     </li>
                     <li>
-                        <a href="#">New</a>
+                        <a href="course_new.php">New</a>
                     </li>
-                    
+
                 </ul>
 
 

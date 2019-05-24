@@ -41,7 +41,7 @@
                     <li>
                         <a href="course_new.php">New</a>
                     </li>
-                    
+
                 </ul>
 
 
