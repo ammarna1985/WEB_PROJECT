@@ -44,9 +44,7 @@
                     <li>
                         <a href="student_new.php">New</a>
                     </li>
-                    <li>
-                        <a href="student_edit">Edit</a>
-                    </li>
+                    
                 </ul>
 
 
@@ -68,9 +66,6 @@
                     </div>
                 </nav>
             </div>
-
-
-
 
         <?php
           include("footer.php");

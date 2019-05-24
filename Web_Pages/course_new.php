@@ -45,9 +45,7 @@
                     <li>
                         <a href="#">New</a>
                     </li>
-                    <li>
-                        <a href="#">Edit</a>
-                    </li>
+                    
                 </ul>
 
 

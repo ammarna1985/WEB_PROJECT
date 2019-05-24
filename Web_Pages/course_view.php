@@ -51,9 +51,7 @@
                     <li>
                         <a href="course_new.php">New</a>
                     </li>
-                    <li>
-                        <a href="course_edit">Edit</a>
-                    </li>
+                    
                 </ul>
 
 
