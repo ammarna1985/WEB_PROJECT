@@ -44,9 +44,7 @@
                     <li>
                         <a href="teacher_new.php">New</a>
                     </li>
-                    <li>
-                        <a href="teacher_edit.php">Edit</a>
-                    </li>
+                    
                 </ul>
 
 
