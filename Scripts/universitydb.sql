@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2019 at 03:43 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: May 24, 2019 at 05:13 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,16 +40,17 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`courseNo`, `name`, `description`, `createDate`) VALUES
-(2130, 'Hygiene', 'Total body and dental hygiene ', '2019-05-12'),
-(2898, 'Chemistry', 'Mineral Chemistry used in pharmacy ', '2019-05-12'),
-(3220, 'Oracle', 'Database developing using PL/SQL', '2019-05-12'),
-(4090, 'Karaoke ', 'Karaoke on Spanish musics', '2019-05-12'),
-(4200, 'Java ', 'fundamental skills in Java programming', '2019-05-12'),
-(4399, 'Painting', 'Painting skills with oil color', '2019-05-12'),
-(4433, 'Electronics', 'Electronic circuits using in medical devices', '2019-05-12'),
-(5390, 'Anatomy ', 'Anatomy of animal\'s body', '2019-05-12'),
-(5656, 'MySQL', 'Database management with phpMyadmin', '2019-05-12'),
-(5901, 'Zumba', 'Traditional latino dance ', '2019-05-12');
+(2000, 'Hygiene', 'Total body and dental hygiene ', '2019-05-12'),
+(2001, 'Chemistry', 'Mineral Chemistry used in pharmacy ', '2019-05-12'),
+(2002, 'Oracle', 'Database developing using PL/SQL', '2019-05-12'),
+(2003, 'Karaoke ', 'Karaoke on Spanish musics', '2019-05-12'),
+(2004, 'Java ', 'fundamental skills in Java programming', '2019-05-12'),
+(2005, 'Painting', 'Painting skills with oil color', '2019-05-12'),
+(2006, 'Electronics', 'Electronic circuits using in medical devices', '2019-05-12'),
+(2007, 'Anatomy ', 'Anatomy of animal\'s body', '2019-05-12'),
+(2008, 'MySQL', 'Database management with phpMyadmin', '2019-05-12'),
+(2009, 'Zumba', 'Traditional latino dance ', '2019-05-12'),
+(2010, 'Professional cooking', 'How to cook for main course of hotels and five star restaurants', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -105,43 +106,7 @@ INSERT INTO `student` (`studentNo`, `fName`, `lName`, `username`, `password`, `t
 (2019005, 'Kim', 'Kardashian', 'kimi', '3333', '2347895678', 'kim@kardashian.com', '34 Beverly hills', 'Music', 1002, '2019-05-12'),
 (2019006, 'Negar', 'Rad', 'neg', '10101010', '45789123455', 'neg@paint.org', '45 Aliso viejo ', 'Graphic design', 1002, '2019-05-12'),
 (2019007, 'Ricky', 'Martin', 'rick', '9988', '6578904532', 'rick@music.net', '66 Hollywood ', 'Music', 1002, '2019-05-12'),
-(2019008, 'Farnoosh', 'Fath', 'farfar', '323232', '5436789230', 'far@bank.ca', '34 Westmount', 'Dentistry', 1001, '2019-05-12'),
-(2019009, 'Azad', 'Farman', 'az54', '5454', '5674321234', 'azad@hardware.com', '43 Rue de la bouche', 'Computer engineering', 1004, '2019-05-12');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `studentcourse`
---
-
-CREATE TABLE `studentcourse` (
-  `studentNo` int(10) NOT NULL,
-  `courseNo` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `studentcourse`
---
-
-INSERT INTO `studentcourse` (`studentNo`, `courseNo`) VALUES
-(2019002, 4200),
-(2019002, 5656),
-(2019002, 3220),
-(2019009, 4433),
-(2019009, 4200),
-(2019004, 5656),
-(2019004, 3220),
-(2019008, 5390),
-(2019008, 2130),
-(2019005, 5901),
-(2019003, 5390),
-(2019003, 4433),
-(2019001, 5390),
-(2019001, 2130),
-(2019001, 2898),
-(2019006, 4399),
-(2019007, 4090),
-(2019007, 5901);
+(2019008, 'Farnoosh', 'Fath', 'farfar', '323232', '5436789230', 'far@bank.ca', '34 Westmount', 'Dentistry', 1001, '2019-05-12');
 
 -- --------------------------------------------------------
 
@@ -170,34 +135,9 @@ INSERT INTO `teacher` (`teacherID`, `fName`, `lName`, `username`, `password`, `t
 (1001, 'Mona', 'Hasan', 'mon21', '2121', '4563421212', 'mona@dr.com', '422 Laval', 'Medicine ', '2019-05-12'),
 (1002, 'Salvador', 'Dali', 'sal3', '333333', '5453334533', 'sal@paint.music', '98 Barcelona ', 'Art', '2019-05-12'),
 (1003, 'Tassia', 'Araujo', 'tass2', '223232', '2324562312', 'tassia@linux.com', '98 Concordia', 'Computer', '2019-05-12'),
-(1004, 'Ali', 'Yavar', 'aliy', '564534', '6765432323', 'ali@engineering.org', '45 Tehran', 'Engineering', '2019-05-12');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `teachercourse`
---
-
-CREATE TABLE `teachercourse` (
-  `teacherID` int(10) NOT NULL,
-  `courseNo` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `teachercourse`
---
-
-INSERT INTO `teachercourse` (`teacherID`, `courseNo`) VALUES
-(1001, 2130),
-(1001, 2898),
-(1001, 5390),
-(1002, 4090),
-(1002, 4399),
-(1002, 5901),
-(1003, 4200),
-(1003, 5656),
-(1003, 3220),
-(1004, 4433);
+(1004, 'Ali', 'Yavar', 'aliy', '564534', '6765432323', 'ali@engineering.org', '45 Tehran', 'Engineering', '2019-05-12'),
+(1005, 'Abbas', 'Kia Rostami', '', '', '2346780098', 'aba@art.org', '237 dr lia', 'Art', '0000-00-00'),
+(1006, 'Rayan', 'Brie', '', '', '3478900098', 'ry@edu.org', '34 Ryerson St.', 'Medicine', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -268,20 +208,15 @@ ALTER TABLE `slider`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`studentNo`),
-  ADD KEY `supervisor` (`supervisor`);
+  ADD KEY `supervisor` (`supervisor`),
+  ADD KEY `supervisor_2` (`supervisor`),
+  ADD KEY `supervisor_3` (`supervisor`);
 
 --
 -- Indexes for table `teacher`
 --
 ALTER TABLE `teacher`
   ADD PRIMARY KEY (`teacherID`);
-
---
--- Indexes for table `teachercourse`
---
-ALTER TABLE `teachercourse`
-  ADD KEY `courseNo` (`courseNo`),
-  ADD KEY `teacherID` (`teacherID`);
 
 --
 -- Indexes for table `thumbnail`
@@ -300,28 +235,40 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `course`
+--
+ALTER TABLE `course`
+  MODIFY `courseNo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2012;
+
+--
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `studentNo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2019010;
+  MODIFY `studentNo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2019022;
+
+--
+-- AUTO_INCREMENT for table `teacher`
+--
+ALTER TABLE `teacher`
+  MODIFY `teacherID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1007;
 
 --
 -- AUTO_INCREMENT for table `thumbnail`
 --
 ALTER TABLE `thumbnail`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
@@ -331,14 +278,7 @@ ALTER TABLE `users`
 -- Constraints for table `student`
 --
 ALTER TABLE `student`
-  ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`supervisor`) REFERENCES `teacher` (`teacherID`);
-
---
--- Constraints for table `teachercourse`
---
-ALTER TABLE `teachercourse`
-  ADD CONSTRAINT `teachercourse_ibfk_1` FOREIGN KEY (`courseNo`) REFERENCES `course` (`courseNo`),
-  ADD CONSTRAINT `teachercourse_ibfk_2` FOREIGN KEY (`teacherID`) REFERENCES `teacher` (`teacherID`);
+  ADD CONSTRAINT `fk_supervisor` FOREIGN KEY (`supervisor`) REFERENCES `teacher` (`teacherID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
