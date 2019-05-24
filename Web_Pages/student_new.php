@@ -30,11 +30,58 @@
 
 
 
+       <?php
+       if (isset($_POST['submit']))
+       {
+
+         $sql="INSERT INTO student (fName, lName, tel, email, address, major, supervisor) value (:firstname, :lastname, :phone,:email,:address,:major,:supervisor)";
+         $STH = $DBH->prepare($sql);
+
+
+
+          $firstname=safe_input($_POST['firstname']);
+          $lastname=safe_input($_POST['lastname']);
+          $phone=safe_input($_POST['phone']);
+          $email=safe_input($_POST['email']);
+          $address=safe_input($_POST['address']);
+          $major=safe_input($_POST['major']);
+          $supervisor=safe_input($_POST['supervisor']);
+
+
+
+          $STH->bindParam(':firstname',$firstname );
+          $STH->bindParam(':lastname',$lastname );
+          $STH->bindParam(':phone',$phone);
+          $STH->bindParam(':email',$email );
+          $STH->bindParam(':address',$address );
+          $STH->bindParam(':major',$major );
+          $STH->bindParam(':supervisor',$supervisor );
+
+
+
+         try {
+            $STH->execute();
+
+            echo '<script language="javascript">';
+            echo 'window.alert("New student is added. Student Number is: ' . $DBH->lastInsertId() .'")';
+            #echo 'document.getElementById("form").reset()';
+            echo '</script>';
+
+         } catch (\Exception $e) {
+           echo '<p class="text-danger">' ?> <?php echo $e->getMessage().'</p>';
+         }
+
+
+       }
+
+      ?>
+
+
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Student</h3>
+                    <h3><a href="student.php">Student</h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -45,7 +92,7 @@
                     <li>
                         <a href="student_new.php">New</a>
                     </li>
-              
+
                 </ul>
 
 
@@ -72,7 +119,7 @@
             <br>
         <div class="container">
         <div class="jumbotron" style="margin-top:48px">
-           <form action=" " method="post" autocomplete="on">
+           <form action="./student_new.php" method="post" autocomplete="on">
 
            <h2 >Student</h2>
            <br>
@@ -88,7 +135,7 @@
 
                <div class="form-group">
                  <label>Phone</label>
-                 <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" >
+                 <input type="tel" class="form-control" name="phone" required="required" >
                </div>
 
                <div class="form-group">

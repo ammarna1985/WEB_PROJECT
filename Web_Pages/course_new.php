@@ -28,13 +28,50 @@
         include("menu.php");
        ?>
 
+       <?php
+       if (isset($_POST['submit']))
+       {
+
+         $sql="INSERT INTO course (name, description) value (:name, :description)";
+         $STH = $DBH->prepare($sql);
+
+
+
+          $name=safe_input($_POST['name']);
+          $description=safe_input($_POST['description']);
+
+
+
+          $STH->bindParam(':name',$name );
+          $STH->bindParam(':description',$description);
+
+
+
+
+         try {
+            $STH->execute();
+
+            echo '<script language="javascript">';
+            echo 'window.alert("New Course is added. Course number is: ' . $DBH->lastInsertId() .'")';
+            #echo 'document.getElementById("form").reset()';
+            echo '</script>';
+
+         } catch (\Exception $e) {
+           echo '<p class="text-danger">' ?> <?php echo $e->getMessage().'</p>';
+         }
+
+
+       }
+
+       ?>
+
 
 
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Course</h3>
+                    <h3><a href="course.php">Course</h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -75,10 +112,6 @@
 
            <h2 >Course</h2>
            <br>
-               <div class="form-group">
-                 <label>Course No</label>
-                 <input type="text" class="form-control" name="courseno" required="required" >
-               </div>
 
                <div class="form-group">
                  <label>Name</label>

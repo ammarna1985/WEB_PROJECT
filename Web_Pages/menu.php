@@ -15,15 +15,15 @@
                   <li><a  href="index.php">HOME</a></li>
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">ABOUT SBU</a></li>
-                      <li><a href="#">HISTORY</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Shahid_Beheshti_University">ABOUT SBU</a></li>
+                      <li><a href="http://en.sbu.ac.ir/Pages/SBU-History.aspx">HISTORY</a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DEPARTMENTS<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">ART</a></li>
-                      <li><a href="#">COMPUTER</a></li>
-                      <li><a href="#">ENGINEERING</a></li>
+                      <li><a href="./Images/art.jpg">ART</a></li>
+                      <li><a href="./Images/computer.jpg">COMPUTER</a></li>
+                      <li><a href="./Images/engineering.jpg">ENGINEERING</a></li>
                       <li><a href="./Images/medicine.jpg">MEDICINE</a></li>
                     </ul>
                   </li>

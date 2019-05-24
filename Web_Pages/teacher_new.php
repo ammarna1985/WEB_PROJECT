@@ -28,13 +28,56 @@
         include("menu.php");
        ?>
 
+       <?php
+       if (isset($_POST['submit']))
+       {
+
+         $sql="INSERT INTO teacher (fName, lName, tel, email, address, field) value (:firstname, :lastname, :phone,:email,:address, :field)";
+         $STH = $DBH->prepare($sql);
+
+
+
+          $firstname=safe_input($_POST['firstname']);
+          $lastname=safe_input($_POST['lastname']);
+          $phone=safe_input($_POST['phone']);
+          $email=safe_input($_POST['email']);
+          $address=safe_input($_POST['address']);
+          $field=safe_input($_POST['field']);
+
+
+
+          $STH->bindParam(':firstname',$firstname );
+          $STH->bindParam(':lastname',$lastname );
+          $STH->bindParam(':phone',$phone);
+          $STH->bindParam(':email',$email );
+          $STH->bindParam(':address',$address );
+          $STH->bindParam(':field',$field );
+
+
+
+         try {
+            $STH->execute();
+
+            echo '<script language="javascript">';
+            echo 'window.alert("New teacher is added. Teacher ID is: ' . $DBH->lastInsertId() .'")';
+            #echo 'document.getElementById("form").reset()';
+            echo '</script>';
+
+         } catch (\Exception $e) {
+           echo '<p class="text-danger">' ?> <?php echo $e->getMessage().'</p>';
+         }
+
+
+       }
+
+       ?>
 
 
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Teacher</h3>
+                    <h3><a href="teacher.php">Teacher</h3>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -45,7 +88,7 @@
                     <li>
                         <a href="teacher_new.php">New</a>
                     </li>
-                    
+
                 </ul>
 
 
@@ -87,7 +130,7 @@
 
                <div class="form-group">
                  <label>Phone</label>
-                 <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" >
+                 <input type="tel" class="form-control" name="phone" required="required" >
                </div>
 
                <div class="form-group">
