@@ -24,7 +24,7 @@
                       <li><a href="#">ART</a></li>
                       <li><a href="#">COMPUTER</a></li>
                       <li><a href="#">ENGINEERING</a></li>
-                      <li><a href="./Images/medicine.jpg"CINE</a></li>
+                      <li><a href="./Images/medicine.jpg">MEDICINE</a></li>
                     </ul>
                   </li>
                   <li><a href="contact.php">CONTACT US</a></li>
